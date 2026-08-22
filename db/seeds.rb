@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Product.destroy_all
+
+Product.create(description: 'Juicy and delicious', name: 'Plump Pear', price: '1.29')
+
+puts "#{Product.count} products created!"
+
